@@ -67,7 +67,7 @@ for size in sizes:
     if len(num_points) != len(train_sizes):
       num_points.append(int(len(X) * t))
 
-    ae.restore_model(osp.join(top_out_dir, experiment_name), 100, True)
+    ae.restore_model(osp.join(top_out_dir, experiment_name), 350, True)
 
     scores = 0.0
     for _ in range(folds):
